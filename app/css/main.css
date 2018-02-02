@@ -1,10 +1,18 @@
-body {
+body, h2, p {
   margin: 0; }
 
 .container {
   position: relative;
   width: 94.11%;
   margin: 0 auto; }
+
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: table; }
+
+.text_cyan {
+  color: #22aaec; }
 
 /*-------Header--------*/
 .header-title {
@@ -17,8 +25,6 @@ body {
   line-height: 1;
   font-family: "League Gothic";
   margin: 16px auto 17px; }
-  .header-title .header-title_cyan {
-    color: #22aaec; }
 
 .header-social {
   position: absolute;
@@ -72,7 +78,7 @@ body {
 /*------End-Header--------*/
 /*-------Main--------*/
 .main {
-  height: 433px;
+  position: relative;
   background-image: url("../img/main_bg.png");
   background-repeat: no-repeat;
   -webkit-background-size: 100% 100%;
@@ -81,3 +87,106 @@ body {
           box-sizing: border-box;
   border-top: 2px solid #22aaec;
   border-bottom: 2px solid #22aaec; }
+
+.main-title {
+  width: 27.84%;
+  height: 79px;
+  margin: 91px auto 19px;
+  opacity: 0.8;
+  background-color: white;
+  font-family: "League Gothic";
+  font-size: 60px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 84px;
+  text-transform: uppercase;
+  color: #076e9f; }
+
+.main-info {
+  width: 76.07%;
+  height: 47px;
+  margin: 0 auto 102px;
+  opacity: 0.8;
+  background-color: white;
+  font-family: "League Gothic";
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 50px;
+  text-transform: uppercase;
+  color: #076e9f; }
+
+.main-person {
+  padding-left: 0;
+  margin: 0;
+  height: 122px; }
+
+.main-person_item {
+  position: relative;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 15.09%;
+  height: 69px;
+  opacity: 0.9;
+  background-color: white;
+  border: 3px solid white;
+  float: left;
+  margin: 25px 8.43% 25px 0; }
+  .main-person_item:first-child {
+    margin-left: 7.94%; }
+  .main-person_item:last-child {
+    margin-right: 0; }
+  .main-person_item .main-person_img {
+    position: absolute;
+    top: -3px;
+    left: -23.5%;
+    width: 46.10%;
+    height: 70px;
+    z-index: 2; }
+  .main-person_item .main-person_quote {
+    width: 48.05%;
+    height: 38px;
+    color: #515151;
+    font-size: 9px;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 14px;
+    margin: 5px 0 7px 34.41%; }
+  .main-person_item .main-person_quote-first {
+    width: 56%; }
+  .main-person_item .main-person_quote-last {
+    width: 68%; }
+  .main-person_item .main-person_name {
+    color: #828282;
+    font-size: 9px;
+    font-weight: 400;
+    margin-left: 34.41%; }
+
+/*------End-Main--------*/
+/*-------Content--------*/
+.content {
+  position: relative; }
+
+.content-author {
+  width: 20.31%;
+  height: 168px;
+  margin-left: 0.52%;
+  border-right: 1px dotted #d5d5d5;
+  border-bottom: 1px dotted #d5d5d5; }
+  .content-author .content-author_header {
+    color: #076e9f;
+    font-family: "League Gothic";
+    font-size: 22px;
+    font-weight: 400;
+    padding-top: 18px;
+    margin: 0 0 19px; }
+  .content-author .content-author_info {
+    width: 82.57%;
+    font-size: 10px;
+    line-height: 18px;
+    color: #5c5c5c;
+    font-weight: 400; }
+    .content-author .content-author_info .content-author_info-name {
+      color: #076e9f;
+      font-weight: 700; }
