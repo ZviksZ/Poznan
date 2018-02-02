@@ -3,7 +3,7 @@
 $mainFont : 'League Gothic'
 $anthrFont : 'League Gothic Condensed'
 
-body, h2, p 
+body, h2,h3, p 
 	margin: 0
 
 
@@ -177,19 +177,20 @@ body, h2, p
 .content
 	position: relative
 
-.content-author
-	width: 20.31%
-	height: 168px
-	margin-left: 0.52% 
-	border-right: 1px dotted #d5d5d5
-	border-bottom: 1px dotted #d5d5d5
-	.content-author_header
+.content-header
 		color: #076e9f
 		font-family: $mainFont
 		font-size: 22px
 		font-weight: 400
 		padding-top: 18px
-		margin: 0 0 19px
+		margin: 0 0 19px	
+
+.content-author
+	width: 20.31%
+	height: 168px
+	float: left
+	margin-left: 0.52% 	
+	border-bottom: 1px dotted #d5d5d5
 	.content-author_info
 		width: 82.57%
 		font-size: 10px
@@ -199,3 +200,203 @@ body, h2, p
 		.content-author_info-name
 			color: #076e9f
 			font-weight: 700
+
+.content-welcome
+	width: 78.54%
+	height: 197px
+	float: left
+	background-color: #fff
+	margin-top: -10px
+	border-top: 2px solid #22aaec
+	border-left: 1px dotted #d5d5d5
+	border-bottom: 1px dotted #d5d5d5
+	border-right: 1px dotted #d5d5d5
+	.content-welcome_header
+		color: #076e9f
+		font-family: $mainFont
+		font-size: 32px
+		font-weight: 400
+		margin: 30px 0 17px 1.72%	
+
+	.content-welcome_avatar
+		float: left
+		width: 52px
+		height: 50px
+		background: url("../img/avatar_bg.png") no-repeat
+		color: white		
+		font-size: 8px
+		font-weight: 700
+		text-align: center
+		padding-top: 17px
+		padding-left: 1px
+		margin: 0 1.46% 0 1.72%
+	.content-welcome_avatar-img
+		margin-left: 0
+		margin-right: 3.2%
+		background: url("../img/avatar.png") no-repeat
+	.content-welcome_info
+		float: left
+		width: 66.4%
+		height: 47px
+		color: #5c5c5c
+		font-size: 10px
+		font-weight: 400
+		line-height: 18px
+		margin-right: 9%
+		margin-bottom: 24px		
+	.content-welcome_btn
+		width: 9.57%
+		float: left
+		padding: 8px 0 7px 0
+		height: 26px
+		background-color: #076e9f
+		background-image: linear-gradient(to top, rgba(0, 0, 0, 0.04) 0%, rgba(255, 255, 255, 0.04) 100%)
+		box-sizing: border-box 
+		text-align: center
+		border: 1px solid #045279
+		border-bottom: 3px solid #00141e
+		box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25)
+		text-decoration: none
+		color: white
+		font-size: 10px
+		font-weight: 700
+		line-height: 8px
+		margin: 0 0 19px 20.21%
+		box-sizing: border-box 
+	.content-welcome_stat
+		width: 23.8%
+		height: 26px
+		background-color: #90d4f5	
+		float: right;
+		margin-right: -0.79%
+		.content-welcome_stat-up
+			display: block
+			float: left
+			margin: 5px 5.58% 0 7.26%  
+		.content-welcome_stat-info
+			float: left
+			height: 9px
+			color: #076e9f
+			font-size: 10px
+			font-weight: 700
+			margin: 9px 8.37% 0 0
+		.content-welcome_stat-info__last
+			margin-right: 0
+		.content-welcome_stat-speech
+			display: block
+			float: left	
+			margin: 6px 5% 0 0 
+		.content-welcome_stat-triangle
+			float: right
+			margin-top: 25px
+
+
+.content-posts
+	width: 20.31%
+	height: 219px
+	float: left
+	margin-left: 0.52% 	
+	margin-top: -19px
+	border-bottom: 1px dotted #d5d5d5
+	.content-header
+		margin: 18px 0 16px 0;
+		padding-top: 0
+	.content-posts_item-last
+		margin-bottom: 27px		
+	.content-posts_item
+		width: 82.56%
+		height: 40px
+		margin-bottom: 11px	
+		.content-posts_img-big
+			float: left
+			margin-right: 9.23%
+		.content-posts_name	
+			width: 59.17%
+			height: 8px
+			color: #5c5c5c
+			font-size: 10px
+			font-weight: 700
+			float: left
+			margin: 6px 0 7px
+		.content-posts_img-small
+			float: left
+			margin-right: 2.56%	
+		.content-posts_comments
+			width: 36%
+			height: 8px
+			color: #5c5c5c
+			font-size: 10px
+			font-style: italic
+			float: left
+			margin-top: 2px
+			word-spacing: 2px
+
+.content-news
+	width: 78.54%
+	height: 376px
+	float: left
+	background-color: #fff
+	border-left: 1px dotted #d5d5d5
+	border-bottom: 1px dotted #d5d5d5			
+	.content-news_item
+		position: relative
+		width: 48.27%
+		height: 214px
+		float: left
+		background-color: #eaeaea
+		border-radius: 20px 0 0 0
+		padding-left: 8.26%
+		margin: 20px 0 0 1.72%
+		.content-news_item:before,
+		.content-news_item:after 
+			 z-index: -1
+			 position: absolute
+			 content: ""
+			 bottom: 15px
+			 left: 10px
+			 width: 50%
+			 top: 80%
+			 max-width: 300px
+			 background: #777
+			 background: rgba(0, 0, 0, 0.7)
+			 -webkit-box-shadow: 0 15px 10px rgba(0,0,0, 0.7)
+			 -moz-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7)
+			 box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7)
+			 -webkit-transform: rotate(-3deg)
+			 -moz-transform: rotate(-3deg)
+			 -o-transform: rotate(-3deg)
+			 -ms-transform: rotate(-3deg)
+			 transform: rotate(-3deg)
+		.content-news_item:after 
+			 -webkit-transform: rotate(3deg)
+			 -moz-transform: rotate(3deg)
+			 -o-transform: rotate(3deg)
+			 -ms-transform: rotate(3deg)
+			 transform: rotate(3deg)
+			 right: 10px
+			 left: auto		
+		.content-header
+			margin: 25px 0 7px 0
+			padding-top: 0
+		.content-news_author
+			height: 10px
+			font-size: 10px
+			font-weight: 400
+			color: #878787
+			margin-bottom: 33px	
+		.content-news_link
+			color: #076e9f
+			text-decoration: none
+			font-size: 10px
+			font-weight: 400
+		.content-news_text
+			width: 68.52%
+			height: 46px
+			color: #5c5c5c
+			font-size: 10px
+			font-weight: 400
+			line-height: 18px
+			margin-bottom: 10px		
+
+
+		
