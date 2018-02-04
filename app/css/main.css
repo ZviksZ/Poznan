@@ -168,7 +168,9 @@ body, h2, h3, p {
 /*------End-Main--------*/
 /*-------Content--------*/
 .content {
-  position: relative; }
+  position: relative;
+  margin-bottom: 0;
+  z-index: 1; }
 
 .content-header {
   color: #076e9f;
@@ -182,7 +184,7 @@ body, h2, h3, p {
   width: 20.31%;
   height: 168px;
   float: left;
-  margin-left: 0.52%;
+  padding-left: 0.52%;
   border-bottom: 1px dotted #d5d5d5; }
   .content-author .content-author_info {
     width: 82.57%;
@@ -200,6 +202,8 @@ body, h2, h3, p {
   float: left;
   background-color: #fff;
   margin-top: -10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-top: 2px solid #22aaec;
   border-left: 1px dotted #d5d5d5;
   border-bottom: 1px dotted #d5d5d5;
@@ -265,7 +269,7 @@ body, h2, h3, p {
     height: 26px;
     background-color: #90d4f5;
     float: right;
-    margin-right: -0.79%; }
+    margin-right: -0.66%; }
     .content-welcome .content-welcome_stat .content-welcome_stat-up {
       display: block;
       float: left;
@@ -291,7 +295,7 @@ body, h2, h3, p {
   width: 20.31%;
   height: 219px;
   float: left;
-  margin-left: 0.52%;
+  padding-left: 0.52%;
   margin-top: -19px;
   border-bottom: 1px dotted #d5d5d5; }
   .content-posts .content-header {
@@ -331,6 +335,8 @@ body, h2, h3, p {
   width: 78.54%;
   height: 376px;
   float: left;
+  z-index: 1;
+  margin-right: 5px;
   background-color: #fff;
   border-left: 1px dotted #d5d5d5;
   border-bottom: 1px dotted #d5d5d5; }
@@ -408,11 +414,20 @@ body, h2, h3, p {
     margin-right: 0; }
     .content-news .content-news_item-last .content-news_item-wrap_last {
       margin-bottom: 3px; }
-  .content-news .content-news_add {
+  .content-news .content-news_item:last-child {
+    background-color: white;
     width: 98.4%;
     height: 80px;
+    margin-top: 29px; }
+    .content-news .content-news_item:last-child:before, .content-news .content-news_item:last-child:after {
+      display: none; }
+  .content-news .content-news_add {
+    position: relative;
+    width: 100%;
+    height: 80px;
     float: left;
-    margin: 28px 0 0 1.72%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     background-color: #f4f3f3;
     background-image: -webkit-gradient(linear, left bottom, left top, from(transparent), to(transparent));
     background-image: -webkit-linear-gradient(bottom, transparent 0%, transparent 100%);
@@ -430,4 +445,92 @@ body, h2, h3, p {
 
 .content-currency {
   float: left;
-  margin-left: 0.52%; }
+  padding-left: 0.52%;
+  width: 20.31%;
+  height: 176px;
+  margin-top: -177px;
+  border-bottom: 1px dotted #d5d5d5; }
+  .content-currency .content-header {
+    padding-top: 23px;
+    margin-bottom: 12px; }
+  .content-currency .content-currency_table {
+    width: 87.63%;
+    text-align: center;
+    vertical-align: middle; }
+    .content-currency .content-currency_table .content-currency_table-h {
+      width: 25%;
+      height: 19px;
+      background-color: #076e9f;
+      color: white;
+      font-size: 10px;
+      font-weight: 400; }
+    .content-currency .content-currency_table .content-currency_table-d {
+      width: 25%;
+      height: 19px;
+      background-color: rgba(144, 212, 245, 0.5);
+      color: #076e9f;
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 18px;
+      padding: 0; }
+    .content-currency .content-currency_table .content-currency_table-up {
+      display: inline-block;
+      vertical-align: middle; }
+    .content-currency .content-currency_table .content-currency_table-blue {
+      background-color: rgba(144, 212, 245, 0.7); }
+
+/*------End-Content--------*/
+/*-------Map--------*/
+.map .map-title {
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  color: #076e9f;
+  font-family: "League Gothic";
+  font-size: 32px;
+  font-weight: 400;
+  margin: 18px 0 18px 3.62%; }
+
+/*------End-Map--------*/
+/*-------Footer--------*/
+.footer-main {
+  height: 44px;
+  border-bottom: 1px dotted #d5d5d5; }
+  .footer-main .footer-title {
+    width: 10%;
+    height: 13px;
+    font-family: "League Gothic";
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #076e9f;
+    margin-top: 10px;
+    margin-left: 0.72%;
+    float: left; }
+  .footer-main .footer-nav {
+    float: right;
+    width: 27.08%;
+    padding-left: 0;
+    margin-top: 9px; }
+    .footer-main .footer-nav .footer-nav_item {
+      float: left;
+      margin-right: 25px;
+      list-style-type: none; }
+      .footer-main .footer-nav .footer-nav_item .footer-nav_link {
+        text-decoration: none;
+        color: #707070;
+        font-size: 10px;
+        font-weight: 400;
+        text-transform: uppercase; }
+      .footer-main .footer-nav .footer-nav_item:first-child {
+        margin-right: 35px; }
+      .footer-main .footer-nav .footer-nav_item:last-child {
+        margin-right: 0; }
+
+.footer-copyright {
+  width: 100%;
+  height: 32px;
+  text-align: center;
+  line-height: 34px;
+  color: #787878;
+  font-size: 10px;
+  font-weight: 400;
+  text-transform: uppercase; }
