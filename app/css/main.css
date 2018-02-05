@@ -473,7 +473,8 @@ body, h2, h3, p {
       font-weight: 400;
       line-height: 18px;
       padding: 0; }
-    .content-currency .content-currency_table .content-currency_table-up {
+    .content-currency .content-currency_table .content-currency_table-img_up,
+    .content-currency .content-currency_table .content-currency_table-img_down {
       display: inline-block;
       vertical-align: middle; }
     .content-currency .content-currency_table .content-currency_table-blue {
